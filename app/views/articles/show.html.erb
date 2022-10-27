@@ -2,6 +2,11 @@
 
 <p><%= @article.body %></p>
 
+<p>
+    <strong>User:</strong>
+    <%= @article.user.user_name %>
+</p>
+
 <ul>
   <li><%= link_to "Edit", edit_article_path(@article) %></li>
   <li><%= link_to "Destroy", article_path(@article),
