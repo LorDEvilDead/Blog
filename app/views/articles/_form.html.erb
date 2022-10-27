@@ -22,6 +22,9 @@
 </div>
 
 <div>
+    <%= form.label :user_id %><br>
+    <%= form.select :user_id, User.all.map { |user| [user.user_name, user.id]} %>
+<div>
     <%= form.submit %>
 </div>
 <% end %>
