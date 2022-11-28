@@ -1,4 +1,4 @@
 class User < ApplicationRecord
-    has_many :article 
-    has_many :comment
+    has_many :articles
+    has_many :comments
 end
